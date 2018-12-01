@@ -1,0 +1,10 @@
+---
+
+version: '3'
+
+services:
+  task-manager:
+    user: docker
+    build: ../../containers/task-manager
+    volumes:
+      - $HOME/work:/work:z
